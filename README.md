@@ -3,7 +3,7 @@
 
 ---
 
-## 🔍 What is XSS Sniffer?
+##  What is XSS Sniffer?
 
 **XSS Sniffer** is a lightweight Chrome extension + Flask backend that helps security researchers quickly identify reflected input points that may lead to XSS vulnerabilities.
 
@@ -42,12 +42,12 @@ Built for bug bounty hunters, security researchers.
 
 ##  Features
 
-- ✅ Scope-based filtering  
-- ✅ Automatic query parameter fuzzing  
-- ✅ Unique token reflection detection  
-- ✅ Discord webhook notifications  
-- ✅ Local logging  
-- ✅ Lightweight and fast  
+-  Scope-based filtering  
+-  Automatic query parameter fuzzing  
+-  Unique token reflection detection  
+-  Discord webhook notifications  
+-  Local logging  
+-  Lightweight and fast  
 
 ---
 
