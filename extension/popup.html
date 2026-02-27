@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scoped HAR Logger</title>
+  <style>
+    body { 
+      font-family: sans-serif; 
+      padding: 15px; 
+      width: 280px;
+      margin: 0;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    
+    label {
+      font-size: 13px;
+      font-weight: 500;
+      color: #333;
+    }
+    
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 13px;
+    }
+    
+    input[type="text"]:focus {
+      outline: none;
+      border-color: #0066cc;
+      box-shadow: 0 0 0 2px rgba(0,102,204,0.2);
+    }
+    
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 4px 0;
+    }
+    
+    .checkbox-group label {
+      margin: 0;
+      cursor: pointer;
+    }
+    
+    input[type="checkbox"] {
+      width: auto;
+      margin: 0;
+      cursor: pointer;
+    }
+    
+    button {
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background-color 0.2s;
+    }
+    
+    button:hover {
+      background-color: #0052a3;
+    }
+    
+    button:active {
+      background-color: #004080;
+    }
+    
+    .divider {
+      height: 1px;
+      background-color: #e0e0e0;
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="input-group">
+      <label for="serverUrl">Flask Server URL</label>
+      <input id="serverUrl" type="text" placeholder="http://localhost:3000" />
+    </div>
+
+    <div class="input-group">
+      <label for="scope">Scope (domain)</label>
+      <input id="scope" type="text" placeholder="example.com" />
+    </div>
+
+    <div class="checkbox-group">
+      <input type="checkbox" id="toggleLogging" />
+      <label for="toggleLogging">Enable Logging</label>
+    </div>
+
+    <div class="divider"></div>
+
+    <button id="saveBtn">Save Settings</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
